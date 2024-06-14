@@ -2,7 +2,7 @@ import nmap
 
 nm = nmap.PortScanner()
 
-target = "192.168.100.170"
+target = "IP"
 
 # Aqui nós realmente usamos a variável 'target'
 nm.scan(target, arguments='-sV -sC')
