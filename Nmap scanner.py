@@ -1,10 +1,10 @@
+# para instalar packages do nmap "pip install python-nmap"
 import nmap
 
 nm = nmap.PortScanner()
 
 target = "IP"
 
-# Aqui nós realmente usamos a variável 'target'
 nm.scan(target, arguments='-sV -sC')
 
 for host in nm.all_hosts():
